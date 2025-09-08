@@ -1,3 +1,5 @@
 dataset/
 malaria/
 svm_model/svm_model.pkl
+resnet_model/resnet_models
+effecientnetb2_model/efficientnet_models
