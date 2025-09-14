@@ -7,3 +7,4 @@ resnet_model/resnet_models.zip
 effecientnetb2_model/efficientnet_models
 eff_test/efficientnet_models
 random_forest_model/trained_models
+effnet_multi_classification/effnet_models
