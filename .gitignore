@@ -8,3 +8,5 @@ effnet_binary_classification/efficientnet_models
 eff_test/efficientnet_models
 random_forest_model/trained_models
 effnet_multi_classification/effnet_models
+random_forest_model/detections
+svm_model/trained_models
