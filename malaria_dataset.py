@@ -9,24 +9,6 @@ from PIL import Image
 class MalariaDataset(Dataset):
     """
     Reusable Malaria detection dataset.
-
-    Args:
-        json_path (str): Path to annotations JSON.
-        image_root (str): Directory containing images.
-        transform (callable, optional): Image-only transform (e.g., ToTensor+Normalize).
-            IMPORTANT: if you also resize in `transform`, DO NOT set `resize_to`, or
-            you'll resize twice without re-scaling boxes.
-        category_map (dict, optional): {category_name -> index}. If None, built from JSON (sorted).
-        image_size (int): Used only for placeholder tensor if a file is missing.
-        resize_to (int or (H,W), optional): If set, images are resized inside __getitem__
-            and bounding boxes are scaled accordingly.
-        return_path (bool): If True, returns (image, target, path). Otherwise (image, target).
-        skip_empty (bool): If True, drops entries with no objects.
-
-    Returns:
-        image (Tensor CxHxW),
-        target (dict): {'boxes': FloatTensor[N,4] in (x_min,y_min,x_max,y_max), 'labels': LongTensor[N]},
-        [path (str)] if return_path=True
     """
 
     def __init__(
